@@ -522,3 +522,96 @@ body {
 .empty-state-text {
   font-size: 0.9rem;
 }
+
+/* Ability Pairs Page */
+.page-subtitle {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.filters-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.filter-toggles {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.toggle-label input[type="checkbox"] {
+  accent-color: var(--accent-primary);
+}
+
+.ability-pair-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ability-icon {
+  font-size: 1.2rem;
+  width: 28px;
+  text-align: center;
+}
+
+.ability-name {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.ability-plus {
+  color: var(--accent-primary);
+  font-weight: bold;
+}
+
+.heroes-cell {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.hero-tag {
+  padding: 2px 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.synergy-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.winrate-cell {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.pickrate-cell {
+  color: var(--text-secondary);
+}
+
+.count-cell {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}

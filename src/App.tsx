@@ -3,9 +3,9 @@ import Home from './pages/Home'
 import Heroes from './pages/Heroes'
 import Skills from './pages/Skills'
 import Ranking from './pages/Ranking'
+import AbilityPairs from './pages/AbilityPairs'
 import './App.css'
 
-// SVG Icons as components
 const HomeIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
     <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
@@ -30,6 +30,12 @@ const RankingIcon = () => (
   </svg>
 )
 
+const PairsIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+    <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/>
+  </svg>
+)
+
 function TabBar() {
   return (
     <nav className="tab-bar">
@@ -48,6 +54,10 @@ function TabBar() {
       <NavLink to="/ranking" className={({ isActive }) => isActive ? 'tab-item active' : 'tab-item'}>
         <RankingIcon />
         <span>排行</span>
+      </NavLink>
+      <NavLink to="/ability-pairs" className={({ isActive }) => isActive ? 'tab-item active' : 'tab-item'}>
+        <PairsIcon />
+        <span>组合</span>
       </NavLink>
     </nav>
   )
@@ -70,6 +80,7 @@ function App() {
             <Route path="/heroes" element={<Heroes />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/ranking" element={<Ranking />} />
+            <Route path="/ability-pairs" element={<AbilityPairs />} />
           </Routes>
         </main>
         
